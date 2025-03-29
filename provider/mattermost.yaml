@@ -1,0 +1,17 @@
+identity:
+  author: cuijiahua
+  name: mattermost
+  label:
+    en_US: mattermost
+    zh_Hans: mattermost
+    pt_BR: mattermost
+  description:
+    en_US: Mattermost Webhook
+    zh_Hans: Mattermost Webhook
+    pt_BR: Mattermost Webhook
+  icon: icon.svg
+tools:
+  - tools/incoming_hook.yaml
+extra:
+  python:
+    source: provider/mattermost.py
