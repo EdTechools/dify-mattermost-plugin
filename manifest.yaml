@@ -1,6 +1,6 @@
 version: 0.0.1
 type: plugin
-author: cuijiahua
+author: EdTechools
 name: mattermost
 label:
   en_US: mattermost
