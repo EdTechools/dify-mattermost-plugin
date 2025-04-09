@@ -22,4 +22,4 @@ Treat this endpoint as a secret. Anyone who has it will be able to post messages
 
 2. Add the Mattermost node to your workflow.  
 
-3. Configure the Webhook endpoint into it.
+3. Paste Incoming Webhook.
