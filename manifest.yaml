@@ -1,6 +1,6 @@
-version: 0.0.2
+version: 0.0.1
 type: plugin
-author: EdTechools
+author: edtechools
 name: mattermost
 label:
   en_US: mattermost
@@ -32,7 +32,7 @@ plugins:
   tools:
     - provider/mattermost.yaml
 meta:
-  version: 0.0.2
+  version: 0.0.1
   arch:
     - amd64
     - arm64
@@ -40,6 +40,6 @@ meta:
     language: python
     version: "3.12"
     entrypoint: main
-created_at: 2025-03-29T16:38:28.841577932+08:00
+created_at: 2025-04-09T16:28:28.841577932+08:00
 privacy: PRIVACY.md
 verified: false
