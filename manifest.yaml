@@ -3,10 +3,10 @@ type: plugin
 author: edtechools
 name: mattermost
 label:
-  en_US: mattermost
-  ja_JP: mattermost
-  zh_Hans: mattermost
-  pt_BR: mattermost
+  en_US: Mattermost
+  ja_JP: Mattermost
+  zh_Hans: Mattermost
+  pt_BR: Mattermost
 description:
   en_US: Mattermost Webhook
   ja_JP: Mattermost Webhook
@@ -40,6 +40,6 @@ meta:
     language: python
     version: "3.12"
     entrypoint: main
-created_at: 2025-04-09T16:28:28.841577932+08:00
+created_at: 2025-04-09T15:28:28.841577932+08:00
 privacy: PRIVACY.md
 verified: false
