@@ -1,6 +1,6 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
-author: "36182049"
+author: EdTechools
 name: mattermost
 label:
   en_US: mattermost
@@ -13,6 +13,9 @@ description:
   zh_Hans: Mattermost Webhook
   pt_BR: Mattermost Webhook
 icon: icon.svg
+tags:
+  - social
+  - productivity
 resource:
   memory: 268435456
   permission:
