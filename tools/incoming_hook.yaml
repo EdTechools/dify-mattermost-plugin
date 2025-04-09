@@ -1,10 +1,10 @@
 identity:
   name: mattermost
-  author: EdTechools
+  author: edtechools
   label:
-    en_US: incoming mattermost
-    zh_Hans: 传入 Webhook
-    pt_BR: incoming mattermost
+    en_US: incoming mattermost webhook
+    zh_Hans: mattermost 传入 Webhook
+    pt_BR: incoming mattermost webhook
 description:
   human:
     en_US: Send messages through incoming Webhook

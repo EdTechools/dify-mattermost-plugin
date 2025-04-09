@@ -2,9 +2,9 @@ identity:
   author: edtechools
   name: mattermost
   label:
-    en_US: mattermost
-    zh_Hans: mattermost
-    pt_BR: mattermost
+    en_US: Mattermost
+    zh_Hans: Mattermost
+    pt_BR: Mattermost
   description:
     en_US: Mattermost Webhook
     zh_Hans: Mattermost Webhook
