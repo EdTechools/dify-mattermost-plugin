@@ -1,6 +1,6 @@
 identity:
   name: mattermost
-  author: cuijiahua
+  author: EdTechools
   label:
     en_US: incoming mattermost
     zh_Hans: 传入 Webhook

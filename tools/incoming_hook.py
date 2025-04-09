@@ -6,7 +6,6 @@ from dify_plugin.entities.tool import ToolInvokeMessage
 
 import requests
 import json
-import logging
 
 
 class WebhookClient:
@@ -24,16 +23,6 @@ class WebhookClient:
         """
         self.base_url = base_url
         self.default_headers = default_headers or {"Content-Type": "application/json"}
-        self.logger = logging.getLogger(__name__)
-
-        # Configure logging
-        handler = logging.StreamHandler()
-        formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        )
-        handler.setFormatter(formatter)
-        self.logger.addHandler(handler)
-        self.logger.setLevel(logging.INFO)
 
     def post(
         self,
@@ -70,8 +59,6 @@ class WebhookClient:
         else:
             payload = data
 
-        self.logger.info(f"Sending POST request to {full_url}")
-
         try:
             response = requests.post(
                 full_url,
@@ -81,13 +68,10 @@ class WebhookClient:
                 timeout=timeout,
             )
             response.raise_for_status()
-            self.logger.info(
-                f"Request successful with status code: {response.status_code}"
-            )
+
             return response
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Request failed: {str(e)}")
-            raise
+        except requests.exceptions.RequestException:
+            pass
 
     def send_text_message(self, url: str, text: str) -> requests.Response:
         """
