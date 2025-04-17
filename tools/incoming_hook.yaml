@@ -1,16 +1,18 @@
 identity:
-  name: mattermost
+  name: incoming_webhook
   author: edtechools
   label:
-    en_US: incoming mattermost webhook
-    zh_Hans: mattermost 传入 Webhook
-    pt_BR: incoming mattermost webhook
+    en_US: Send messages via Incoming Webhook
+    zh_Hans: 通过传入Webhook发送消息
+    ja_Jp: 受信Webhook経由でメッセージを送信する
+    pt_BR: Enviar mensagens através de um Webhook de entrada
 description:
   human:
-    en_US: Send messages through incoming Webhook
-    zh_Hans: 通过传入 Webhook 发送消息
-    pt_BR: Send messages through incoming Webhook
-  llm: Send messages through incoming Webhook
+    en_US: Send messages via Incoming Webhook
+    zh_Hans: 通过传入Webhook发送消息
+    ja_Jp: 受信Webhook経由でメッセージを送信する
+    pt_BR: Enviar mensagens através de um Webhook de entrada
+  llm: Send messages via Incoming Webhook
 parameters:
   - name: message
     type: string
@@ -18,26 +20,30 @@ parameters:
     label:
       en_US: The messages you want to send
       zh_Hans: 要发送的消息
-      pt_BR: The messages you want to send
+      ja_Jp: 送信するメッセージ
+      pt_BR: Mensagem a ser enviada
     human_description:
       en_US: The messages you want to send
       zh_Hans: 要发送的消息
-      pt_BR: The messages you want to send
+      ja_Jp: 送信するメッセージ
+      pt_BR: Mensagem a ser enviada
     llm_description: The messages you want to send
     form: llm
   - name: webhook_url
-    type: string
+    type: secret-input
     required: true
     label:
-      en_US: The incoming webhook url from Mattermost
+      en_US: Mattermost Incoming Webhook URL
       zh_Hans: Mattermost 中的 传入Webhook 网址
-      pt_BR: The incoming webhook url from Mattermost
+      ja_Jp: Mattermostの受信Webhook URL
+      pt_BR: URL do Webhook de entrada no Mattermost
     human_description:
-      en_US: The incoming webhook url from Mattermost
+      en_US: Mattermost Incoming Webhook URL
       zh_Hans: Mattermost 中的 传入Webhook 网址
-      pt_BR: The incoming webhook url from Mattermost
-    llm_description: the incoming webhook url from Mattermost
-    form: llm
+      ja_Jp: Mattermostの受信Webhook URL
+      pt_BR: URL do Webhook de entrada no Mattermost
+    llm_description: Mattermost Incoming Webhook URL
+    form: form
 extra:
   python:
     source: tools/incoming_hook.py

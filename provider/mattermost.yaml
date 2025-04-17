@@ -4,14 +4,17 @@ identity:
   label:
     en_US: Mattermost
     zh_Hans: Mattermost
+    ja_Jp: Mattermost
     pt_BR: Mattermost
   description:
     en_US: Mattermost Webhook
     zh_Hans: Mattermost Webhook
-    pt_BR: Mattermost Webhook
+    ja_Jp: Mattermostウェブフック
+    pt_BR: Webhook do Mattermost
   icon: icon.svg
 tools:
   - tools/incoming_hook.yaml
+  - tools/bot_accounts.yaml
 extra:
   python:
     source: provider/mattermost.py

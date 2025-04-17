@@ -30,4 +30,4 @@ Any future changes to this privacy policy will be communicated through updates t
 
 If you have questions about this privacy policy, please open an issue on our GitHub repository.
 
-Last updated: Aprial 09, 2025
+Last updated: Aprial 16, 2025
