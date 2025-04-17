@@ -8,10 +8,10 @@ label:
   zh_Hans: Mattermost
   pt_BR: Mattermost
 description:
-  en_US: Mattermost Webhook
-  ja_JP: Mattermost Webhook
-  zh_Hans: Mattermost Webhook
-  pt_BR: Mattermost Webhook
+  en_US: Send message to channel
+  ja_JP: チャンネルにメッセージを送信する
+  zh_Hans: 向频道发送消息
+  pt_BR: Enviar uma mensagem para o canal
 icon: icon.svg
 tags:
   - social
